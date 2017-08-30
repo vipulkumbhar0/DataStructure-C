@@ -5,12 +5,12 @@ void insertionsort(int* arr,int n){
 	int j,i,key,k;
 	for(j=1;j<n;j++){
 		i=j-1;
-		key=arr+j;
-		while(i>=0 && (arr+i)>key){
-			arr+i+1=arr[i];
-			i--;
+		key=*(arr+j);
+		while(i>=0 && *(arr+i)>key){
+			*(arr+i+1)=*(arr+i);
+			 i--;
 		}
-	arr[i]=key;
+	*(arr+i+1)=key;
 	}
 	printf("\nThe sorted array is :-");
 	for(k=0;k<n;k++){
