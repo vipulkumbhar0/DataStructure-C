@@ -1,4 +1,4 @@
-/*Athor @Tanumoy Nandy. 
+/*Author @Tanumoy Nandy. 
 Subject to Copy right. 
 Give due credit in Paytm before copying, 
 else legal action will follow!
