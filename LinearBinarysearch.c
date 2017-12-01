@@ -62,7 +62,7 @@ void linear(int a,int* arr){
 				u=mid-1;
 			}
 			else if(a>*(arr+mid)){
-				l=mid-1;
+				l=mid+1;
 			}
 			else{
 				return mid;
