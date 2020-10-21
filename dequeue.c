@@ -7,7 +7,7 @@
 		struct node *link;
 		};
 		struct node* rear=NULL;
-		struct node* top=NULL;
+		struct node* top= NULL;
 		
 		void create(){
 			struct node* temp;
