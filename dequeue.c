@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+	//Declaration of Dequeue.
 	struct node{
 		int data;
 		struct node *link;
@@ -26,10 +27,13 @@
 					ptr->link=temp;
 					}
 			}
-			
+
+			//To insert item into Dequeue at rear
 			void insertend(){
 				 create();
 				}
+
+			//To insert item into Dequeue at front
 			void insertbeg(){
 				struct node* temp;
 				temp=(struct node*)malloc(sizeof(struct node));
@@ -40,6 +44,7 @@
 				rear=temp;
 				}
 				
+			//To delete item from Dequeue at rear.
 			void deleteend(){
 				struct node* ptr=rear;
 				while(ptr->link!=NULL){
@@ -48,13 +53,15 @@
 				printf("\npopped element is : %d" ,ptr->data);
 				free(ptr);
 				}
-				
+
+			//To delete item from Dequeue at front.
 			void deletefront(){
 				struct node* ptr=rear;
 				rear=rear->link;
 				printf("\npopped element is : %d",ptr->data);
 				}
-				
+
+			//To display the items on scrren
 			void display(){
 				struct node* ptr=rear;
 				while(ptr!=NULL){
