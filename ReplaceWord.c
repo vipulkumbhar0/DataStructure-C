@@ -48,9 +48,9 @@ char* replaceWord(const char* s, const char* oldW,
 // Driver Program 
 int main() 
 { 
-	char str[] = "xxforxx xx for xx"; 
-	char c[] = "xx"; 
-	char d[] = "Geeks"; 
+	char str[] = "We will replace this word"; 
+	char c[] = "this"; 
+	char d[] = "no"; 
 
 	char* result = NULL; 
 
